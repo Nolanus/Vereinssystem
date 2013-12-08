@@ -1,0 +1,333 @@
+/* CSS Document */
+/* Generelle HTML-Elemente */
+html {
+    background-color: #ededed;
+}
+body {
+    font-size: 14px;
+    color: #323232;
+    background-color: #ededed;
+    font-family: "segoe ui", Verdana, sans-serif;
+}
+p, li, dt {
+    margin: 0;
+}
+p{
+  padding: 7px 0;
+}
+li{
+  padding: 1px 0;
+}
+
+ul, ol {
+    padding: 5px 5px 5px 20px;
+    margin: 0;
+}
+a{
+    color: #E84E0E;
+    text-decoration: underline;
+    margin: 0;
+}
+a:hover{
+    color: #E84E0E;
+    text-decoration: none;
+}
+a:active{
+    color: #009640;
+}
+h1, h2, h3{
+    font-weight: bold;
+    display: block;
+}
+h1{
+    font-size: 135%;
+    margin: 15px 0;
+}
+h2{
+    font-size: 120%;
+    margin: 15px 0 10px 0;
+}
+h3{
+    font-size: 110%;
+    margin: 15px 0 0 0;
+}
+table{
+    border-collapse: collapse;
+    border-spacing: 2px;
+    width: 100%;
+}
+tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+}
+td, th {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #bbbbbb;
+    padding: 8px;
+}
+table.noborder td {
+  border-width: 0px;
+}
+th, td.firstcolumn{
+  background-color: #F4F4F4;
+  border-color: #bbbbbb #bbbbbb #999999 #bbbbbb;
+  font-weight: bold;
+}
+th{
+  vertical-align: top;
+}
+
+/* Hauptstruktur */
+#main{
+    background: #ffffff;
+    width: 950px;
+    margin: 15px auto 0px auto;
+    border-radius: 3px 3px 0px 0px;
+}
+/* Kopf-Bereich */
+#header{
+    padding: 15px 15px 10px 15px;
+}
+#header img{
+    margin: 0;
+    width: 900px;
+    border: 0;
+}
+/* Navigations-Leiste */
+#navi{
+    background: none no-repeat scroll 760px center #F4F4F4;
+    border-left: 2px solid #FFFFFF;
+    border-right: 2px solid #FFFFFF;
+    margin-top: 20px;
+    height: 35px;
+}
+#navi ul{
+    padding: 0 0 0 20px;
+    margin: 0;
+}
+#navi li{
+    float: left;
+    display: inline;
+    padding: 0 35px 0px 10px;
+    border-left: 2px solid #999;
+}
+#navi li.logoutlink{
+    float: right;
+    padding: 0 20px 0 10px;
+}
+#navi a{
+    margin: 5px 0 0 0;
+    display: block;
+}
+.naviicon{
+  margin: 5px;
+}
+.naviicon img{
+  vertical-align: bottom;
+}
+
+/* Inhaltsbereich */
+#content{
+  padding: 15px 15px 10px 15px;
+}
+.rightbox, .leftbox{
+    float: left;
+    margin:5px;
+}
+.boxsystem33 .rightbox, .boxsystem66 .leftbox{
+    width: 31%;
+}
+.boxsystem33 .leftbox, .boxsystem66 .rightbox{
+    width: 62%;
+}
+.boxsystem50 .leftbox, .boxsystem50 .rightbox{
+    width: 48%;
+}
+ul.nolistimg li{
+  list-style: none;
+  padding: 5px 0;
+}
+ul.nolistimg li a{
+  vertical-align: top;
+}
+.actionline span{
+  margin: 0 25px;
+}
+.actionline img{
+  vertical-align: text-top;
+}
+.actionlinesearchform, .floatright{
+  float: right;
+}
+.actionlinesearchform img{
+  vertical-align: text-bottom;
+}
+.pagenavi{
+    margin: 10px 0;
+}
+.pagenavi a{
+    background-color: #F4F4F4;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    padding: 5px 10px;
+}
+.pagenavi a.currentpage{
+    background-color: #EEEEEE;
+    border-color: #999999;
+}
+.actionrow img{
+  margin: 0 5px;
+}
+.afternews{
+  border-top: 2px solid #999;
+  padding-top: 0;
+  margin-top: 25px;
+  font-size: 85%;
+  color: #666;
+}
+.afternews p{
+  padding: 3px 0;
+}
+
+/* Fuﬂbereich */
+#footer{
+    background: url("../images/logo_footer.png") no-repeat scroll 765px center #F4F4F4;
+    color: #666666;
+    font-size:80%;
+    margin: 0px auto;
+    padding: 15px;
+    border-top: 2px solid #999999;
+    border-radius: 0px 0px 3px 3px;
+}
+
+/* Style Elements */
+span.namestyle{
+    color: #E84E0E;
+}
+span.namestyle span{
+    color: #FFFFFF;
+    background-color: #009640;
+    font-weight: bold;
+}
+.akzentrot{
+    color: #E84E0E;
+}
+.akzentgruen{
+    color: #009640;
+}
+
+/* Formular */
+.formular{
+  padding-left: 10px;
+}
+.formular label{
+    width: 170px;
+    float: left;
+    padding: 3px 0px 5px 3px;
+    clear: both;
+}
+.formular input, .formular select{
+    border: 1px solid #999;
+    padding: 4px;
+}
+.formular input:hover, .formular select:hover,.formular input:focus, .formular select:focus{
+    border: 1px solid #E84E0E;
+}
+.formular .button{
+    padding: 5px 25px;
+    margin-left: 172px;
+}
+.xxsmall{
+    width: 50px;
+}
+.xsmall{
+  width: 75px;
+}
+
+.small{
+    width: 100px;
+}
+.medium{
+    width: 175px;
+}
+.button.medium{
+    width: 185px;
+}
+.large{
+    width: 298px;
+}
+.xlarge{
+    width: 350px;
+}
+#captcha{
+  text-transform: lowercase;
+}
+.captchaholder{
+  margin: 20px 0px 0px 174px;
+}
+.captchaline{
+  margin-top: 0px;
+}
+
+/* Messages */
+.message{
+   background-position: 15px 50%;
+   text-align: left;
+   padding: 5px 20px 5px 45px;
+   margin: 10px 0;
+   border-top: 2px solid transparent;
+   border-bottom: 2px solid transparent;
+   background-repeat: no-repeat
+}
+.error {
+   background-color: #FFE4E3;
+   background-image: url('../images/error.png');
+   border-bottom-color: #E47E7A;
+   border-top-color: #E47E7A;
+}
+.warning {
+   background-color: #FFF6BF;
+   background-image: url('../images/warning.png');
+   border-top-color: #ffd324;
+   border-bottom-color: #ffd324;
+}
+.success {
+   background-color: #E0FFD3;
+   background-image: url('../images/success.png');
+   border-top-color: #8CD56A;
+   border-bottom-color: #8CD56A;
+}
+.information {
+   background-color: #E3F1FE;
+   background-image:  url('../images/information.png');
+   border-top-color: #7AA6D3;
+   border-bottom-color: #7AA6D3;
+}
+
+/* General and usefull classes*/
+.textright{
+    text-align: right;
+}
+.textcenter,.tcenter, .actionrow {
+    text-align: center;
+}
+.textleft{
+    text-align: left;
+}
+.blockdisplay{
+  display: block;
+}
+.nodisplay{
+  display: none;
+}
+.hidden{
+  visibility: hidden;
+}
+.imageinline{
+  vertical-align: sub;
+}
+.clearit{
+    clear: both;
+}
